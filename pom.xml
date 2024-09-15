@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.4.4</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.kims.nexacro</groupId>
+	<artifactId>nexacroN-spring-boot-2.4.4</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+	<name>demo-nexacro-web-001</name>
+	<description>Demo project for Spring Boot</description>
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
+	 
+	 <!-- <repositories>
+	 	<repository>
+	        <id>local-repository</id>
+	        <url>file://${project.basedir}/lib</url>
+     	</repository>
+     </repositories> -->
+        
+	<dependencies>
+	
+        
+		<!--  dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency -->
+		<!--  JWT 형식의 토큰을 발행
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt</artifactId>
+			<version>0.9.1</version>
+		</dependency  -->  
+		<!--  -->
+		
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
+		<!-- <dependency>
+		    <groupId>com.fasterxml.jackson.core</groupId>
+		    <artifactId>jackson-core</artifactId>
+		    <version>2.11.4</version>
+		</dependency> -->
+		
+		<!-- JSONObject -->
+		
+        
+		<!-- https://mvnrepository.com/artifact/org.json/json -->
+		<dependency>
+		    <groupId>org.json</groupId>
+		    <artifactId>json</artifactId>
+		    <version>20180813</version>
+		</dependency>
+				<!-- JSONObject -->
+				
+	
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		
+		<dependency> 
+			<groupId>org.springframework.boot</groupId> 
+			<artifactId>spring-boot-starter-web-services</artifactId> 
+		</dependency>
+
+		<dependency> 
+			<groupId>org.springframework.security</groupId> 
+			<artifactId>spring-security-test</artifactId> 
+			<scope>test</scope> 
+		</dependency>
+		<!--  출처: https://woolbro.tistory.com/54 [개발자 울이 노트] -->
+
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		
+		<!-- mybatis ,  oracle -->
+		<dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>1.3.2</version>
+        </dependency>
+		
+		<!-- https://mvnrepository.com/artifact/com.oracle.ojdbc/orai18n -->
+		<dependency>
+			<groupId>com.oracle.database.jdbc</groupId>
+			<artifactId>ojdbc8</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		
+		<dependency>
+		    <groupId>com.oracle.ojdbc</groupId>
+		    <artifactId>orai18n</artifactId>
+		    <version>19.3.0.0</version>
+		</dependency>
+		<!-- mybatis ,  oracle -->
+		
+		<!-- <dependency>
+		    <groupId>nexacro_n_jar</groupId>
+		    <artifactId>nnjar</artifactId>
+		    <version>1.0.0</version>
+		    <scope>system</scope>
+		    <systemPath>${basedir}/src/main/webapp/WEB-INF/lib/*.jar</systemPath>
+		</dependency> -->
+		
+		<!-- 넥사크로 의존성 추가  -->
+		<!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
+		<dependency>
+		    <groupId>commons-codec</groupId>
+		    <artifactId>commons-codec</artifactId>
+		    <version>1.15</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-collections4 -->
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-collections4</artifactId>
+		    <version>4.4</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-compress -->
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-compress</artifactId>
+		    <version>1.21</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/commons-fileupload/commons-fileupload -->
+		<dependency>
+		    <groupId>commons-fileupload</groupId>
+		    <artifactId>commons-fileupload</artifactId>
+		    <version>1.5</version>
+		</dependency>
+				
+		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+		<dependency>
+		    <groupId>commons-io</groupId>
+		    <artifactId>commons-io</artifactId>
+		    <version>2.11.0</version>
+		</dependency>
+			
+			
+		<!-- https://mvnrepository.com/artifact/commons-logging/commons-logging -->
+		<dependency>
+		    <groupId>commons-logging</groupId>
+		    <artifactId>commons-logging</artifactId>
+		    <version>1.2</version>
+		</dependency>
+							
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-math3 -->
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-math3</artifactId>
+		    <version>3.6.1</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
+		<dependency>
+		    <groupId>com.googlecode.json-simple</groupId>
+		    <artifactId>json-simple</artifactId>
+		    <version>1.1.1</version>
+		</dependency>
+						
+		<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
+		<dependency>
+		    <groupId>org.apache.logging.log4j</groupId>
+		    <artifactId>log4j-api</artifactId>
+		    <version>2.17.2</version>
+		</dependency>
+				
+		<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+		<dependency>
+		    <groupId>org.apache.logging.log4j</groupId>
+		    <artifactId>log4j-core</artifactId>
+		    <version>2.17.2</version>
+		</dependency>
+				
+		<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-jcl -->
+		<dependency>
+		    <groupId>org.apache.logging.log4j</groupId>
+		    <artifactId>log4j-jcl</artifactId>
+		    <version>2.17.2</version>
+		</dependency>
+				
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+		<dependency>
+		    <groupId>org.apache.poi</groupId>
+		    <artifactId>poi</artifactId>
+		    <version>5.2.2</version>
+		</dependency>
+				
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+		<dependency>
+		    <groupId>org.apache.poi</groupId>
+		    <artifactId>poi-ooxml</artifactId>
+		    <version>5.2.2</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-full -->
+		<dependency>
+		    <groupId>org.apache.poi</groupId>
+		    <artifactId>poi-ooxml-full</artifactId>
+		    <version>5.2.2</version>
+		</dependency>
+						
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-scratchpad -->
+		<dependency>
+		    <groupId>org.apache.poi</groupId>
+		    <artifactId>poi-scratchpad</artifactId>
+		    <version>5.2.2</version>
+		</dependency>
+				
+		<!-- https://mvnrepository.com/artifact/com.zaxxer/SparseBitSet -->
+		<dependency>
+		    <groupId>com.zaxxer</groupId>
+		    <artifactId>SparseBitSet</artifactId>
+		    <version>1.2</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.apache.xmlbeans/xmlbeans -->
+		<dependency>
+		    <groupId>org.apache.xmlbeans</groupId>
+		    <artifactId>xmlbeans</artifactId>
+		    <version>5.0.3</version>
+		</dependency>
+		
+		<!-- nexacroN jar 추가  --> 
+		<!-- <dependency>
+			<groupId>com.nexacron</groupId>
+			<artifactId>nexacro-xapi</artifactId>
+			<version>1.0.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/nexacroN-xapi-1.0.0-SNAPSHOT.jar</systemPath>
+		</dependency>  
+		<dependency>
+			<groupId>com.nexacron</groupId>
+			<artifactId>nexacro-xeni</artifactId>
+			<version>1.0.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/nexacroN-xeni-1.0.0-SNAPSHOT.jar</systemPath>
+		</dependency> -->
+		<dependency>
+			<groupId>com.nexacron</groupId>
+			<artifactId>nexacro-xapi</artifactId>
+			<version>1.0.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/nexacro-xapi-java-1.0.12.jar</systemPath>
+		</dependency>  
+		<dependency>
+			<groupId>com.nexacron</groupId>
+			<artifactId>nexacro-xeni</artifactId>
+			<version>1.0.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/nexacro-xeni-java-1.4.13.jar</systemPath>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.nexacron</groupId>
+			<artifactId>uiadapter-spring-core</artifactId>
+			<version>1.0.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/uiadapter-spring-core-1.0.0-SNAPSHOT.jar</systemPath>
+		</dependency>
+		 
+		<dependency>
+			<groupId>com.nexacron</groupId>
+			<artifactId>uiadapter-spring-dataaccess</artifactId>
+			<version>1.0.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/uiadapter-spring-dataaccess-1.0.0-SNAPSHOT.jar</systemPath>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.nexacron</groupId>
+			<artifactId>uiadapter-spring-excel</artifactId>
+			<version>1.0.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/uiadapter-spring-excel-1.0.0-SNAPSHOT.jar</systemPath>
+		</dependency>
+		<!-- 
+		<dependency>
+			<groupId>com.nexacron</groupId>
+			<artifactId>en</artifactId>
+			<version>1.0.1</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/error_en.properties</systemPath>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.nexacron</groupId>
+			<artifactId>ko</artifactId>
+			<version>1.0.1</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/error_ko.properties</systemPath>
+		</dependency>
+		
+		 -->
+		
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
