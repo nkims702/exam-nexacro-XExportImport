@@ -1,6 +1,7 @@
-ㄴ
-ㄴ
-ㄴ
+
+
+2024-09-18
+토근 정보 변경 후 커밋 완료
 
 https://docs.tobesoft.com/xeni_user_manual_ko/42332e9efc1e46a3
 
