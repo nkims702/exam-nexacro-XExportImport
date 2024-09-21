@@ -30,7 +30,7 @@
 
             obj = new Button("Button00","64.00","44","626","36",null,null,null,null,null,null,this);
             obj.set_taborder("1");
-            obj.set_text("Button port 8181 /nexacro-xeni-java/XExportImport");
+            obj.set_text("Button port 8181 exam-nexacro-XExportImport");
             this.addChild(obj.name, obj);
 
             obj = new TextArea("txtLog","64","220","491","168",null,null,null,null,null,null,this);
