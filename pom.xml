@@ -251,63 +251,40 @@
 			<version>1.0.0</version>
 			<scope>system</scope>
 			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/nexacroN-xeni-1.0.0-SNAPSHOT.jar</systemPath>
-		</dependency> -->
-		<dependency>
+		</dependency> --> 
+		<dependency> 
 			<groupId>com.nexacron</groupId>
 			<artifactId>nexacro-xapi</artifactId>
-			<version>1.0.0</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/nexacro-xapi-java-1.0.12.jar</systemPath>
+			<version>1.0.12</version>
 		</dependency>  
+		<!-- <scope>system</scope>
+			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/nexacro-xapi-java-1.0.12.jar</systemPath> -->
 		<dependency>
 			<groupId>com.nexacron</groupId>
 			<artifactId>nexacro-xeni</artifactId>
-			<version>1.0.0</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/nexacro-xeni-java-1.4.13.jar</systemPath>
+			<version>1.4.13</version>
 		</dependency>
+		<!-- 
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/nexacro-xeni-java-1.4.13.jar</systemPath> -->
 		
 		<dependency>
 			<groupId>com.nexacron</groupId>
 			<artifactId>uiadapter-spring-core</artifactId>
-			<version>1.0.0</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/uiadapter-spring-core-1.0.0-SNAPSHOT.jar</systemPath>
+			<version>1.0.0</version> 
 		</dependency>
-		 
+		  
 		<dependency>
 			<groupId>com.nexacron</groupId>
 			<artifactId>uiadapter-spring-dataaccess</artifactId>
-			<version>1.0.0</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/uiadapter-spring-dataaccess-1.0.0-SNAPSHOT.jar</systemPath>
+			<version>1.0.0</version> 
 		</dependency>
 		
 		<dependency>
 			<groupId>com.nexacron</groupId>
 			<artifactId>uiadapter-spring-excel</artifactId>
-			<version>1.0.0</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/uiadapter-spring-excel-1.0.0-SNAPSHOT.jar</systemPath>
+			<version>1.0.0</version> 
 		</dependency>
-		<!-- 
-		<dependency>
-			<groupId>com.nexacron</groupId>
-			<artifactId>en</artifactId>
-			<version>1.0.1</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/error_en.properties</systemPath>
-		</dependency>
-		
-		<dependency>
-			<groupId>com.nexacron</groupId>
-			<artifactId>ko</artifactId>
-			<version>1.0.1</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/error_ko.properties</systemPath>
-		</dependency>
-		
-		 -->
 		
 	</dependencies>
 

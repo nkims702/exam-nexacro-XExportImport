@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 
 import com.nexacro.java.xeni.services.GridExportImportServlet;
 
-@Configuration
+//@Configuration
 public class ServletConfig {
 
 	@Bean
