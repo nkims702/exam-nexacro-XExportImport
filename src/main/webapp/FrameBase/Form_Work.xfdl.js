@@ -54,7 +54,7 @@
 
             obj = new Button("Button04","64","7","627","30",null,null,null,null,null,null,this);
             obj.set_taborder("6");
-            obj.set_text("소스파일위치변경");
+            obj.set_text("넥사 헨들러");
             this.addChild(obj.name, obj);
             // Layout Functions
             //-- Default Layout : this
