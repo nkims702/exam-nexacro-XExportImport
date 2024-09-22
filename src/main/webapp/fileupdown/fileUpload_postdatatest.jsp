@@ -34,7 +34,7 @@ https://kku-jun.tistory.com/48
 <%
 
 	/*file upload*/
-	System.out.println("dir webapp ----------------------------------------------------------------------");
+	System.out.println("fileupload_postdatatest.jsp ----------------------------------------------------------------------");
 	request.setCharacterEncoding("UTF-8");
 
 	//서버의 실제 파일 저장 절대 경로
@@ -44,7 +44,9 @@ https://kku-jun.tistory.com/48
 	String getFolderName	= request.getParameter("filefolder");
 	
 	
-	String savePath = contextRealPath + getFolderName + "\\";
+	//String savePath = contextRealPath + getFolderName + "\\";
+	String savePath = "C:\\dev\\nexacro-import-file\\";
+	System.out.println("fileupload_postdatatest.jsp savePath=" + savePath);
 	
 	//실제 url 주소(마지막 /로 부터 -18자리 - 자신의 환경에 맞게 조절해야 함)
 	String url = request.getRequestURL().substring(0, request.getRequestURL().lastIndexOf("/")-18) + getFolderName + "/";

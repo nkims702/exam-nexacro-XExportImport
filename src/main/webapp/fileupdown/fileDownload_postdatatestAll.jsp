@@ -27,6 +27,9 @@
 	//넥사크로 플랫폼에서 전달한 파일 이름 리스트
 	String getNameList	 = request.getParameter("filenamelist");
 	
+	System.out.println("fileDownload_postdatatestAll getFolderName::::::::::::::::::::::::::" + getFolderName);
+	System.out.println("fileDownload_postdatatestAll getNameList::::::::::::::::::::::::::" + getNameList);
+	
 	//","로 나열된 오브젝트를 나누어 배열로 만든다.
 	String arrNameList[] = getNameList.split(",");
 

@@ -25,9 +25,16 @@
 	
 	//넥사크로 플랫폼에서 전달한 폴더이름
 	String getFolderName = request.getParameter("filefolder");
+	
+	System.out.println("fileDownload_postdatatest.jsp getPath::::::::::::::::::::::::::" + getPath);
+	System.out.println("fileDownload_postdatatest.jsp getName::::::::::::::::::::::::::" + getName);
+	System.out.println("fileDownload_postdatatest.jsp getFolderName::::::::::::::::::::::::::" + getFolderName);
 
 	String filename = new String(getName.getBytes("iso8859-1"), "utf-8");
-	String filePath = contextRealPath + getFolderName + "\\" + filename;
+	///String filePath = contextRealPath + getFolderName + "\\" + filename;
+	// String savePath = "C:\\dev\\nexacro-import-file\\";
+	String filePath = "C:\\dev\\nexacro-import-file\\" + filename;
+	
 	
 	byte[] buffer = new byte[1024];
 

@@ -83,6 +83,7 @@
         this.gfnGetPercent = function(nload,nTotal)
         {
         	var nCurPercent = (nload / nTotal) * 100;
+        	console.log("nCurPercent:" + nCurPercent);
         	return nCurPercent;
         };
 
@@ -109,6 +110,7 @@
         		vFile.open(null, VirtualFile.openRead);
         		//return file size --> fileList_onsuccess : reason 9
         		vFile.getFileSize();
+
         		vFile.close();
         	}
         }
@@ -123,6 +125,7 @@
         */
         this.gfnAddUploadRow = function (objVirtureFile,e)
         {
+        	console.log("gfnAddUploadRow-----------------------------------");
         	var objDs = this.objects[objVirtureFile.datasetId];
         	var objParent = objDs.parent;
         	var objProgress = this.components[objParent.config.objProgId];
@@ -302,8 +305,8 @@
         	//objCallDs == upload dataset ( upload file list )
         	//objDs == grid dataset ( grid list )
         	var objCallDs = e.datasets[0];
-        	var objDs = this.objects[objForm.config.dsListId];
-
+        	//var objDs = this.objects[objForm.config.dsListId];
+        	var objDs = this.objects[objForm.config.dsUploadId];
         	var sFileId = "";
         	var sFilename = "";
         	var sOrgFilename = "";
@@ -325,6 +328,12 @@
         			nCallDsRow = objCallDs.findRow("orgFileName",sOrgFilename);
         			objDs.setColumn(i,"FILE_PATH",objCallDs.getColumn(nCallDsRow,"savePath"));
         			objDs.setColumn(i,"FILE_URL",objCallDs.getColumn(nCallDsRow,"fullUrl"));
+
+        			console.log("returnCode savePath:" + objCallDs.getColumn(nCallDsRow,"savePath"));
+        			console.log("returnCode fullUrl:" + objCallDs.getColumn(nCallDsRow,"fullUrl"));
+        			console.log("returnCode ErrorCode:" + objCallDs.getColumn(nCallDsRow,"ErrorCode"));
+        			console.log("returnCode ErrorMsg:" + objCallDs.getColumn(nCallDsRow,"ErrorMsg"));
+
         		}
         	};
         };

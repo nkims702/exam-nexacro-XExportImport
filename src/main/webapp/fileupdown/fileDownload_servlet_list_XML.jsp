@@ -24,11 +24,11 @@
 	VariableList resVarList = resData.getVariableList();
 	
 	String folderName = inVariableList.getString("filefolder");
-	
+	System.out.println("fileDownload_servlet_list_XML folderName::::::::::::::::::::::::::" + folderName);
 	
 	/*서버의 실제 파일 저장 절대 경로 */
-	String filePath = request.getRealPath("./" + folderName) + "/";
-	
+	//String filePath = request.getRealPath("./" + folderName) + "/";
+	String filePath = "C:\\dev\\nexacro-import-file\\";
 	//실제 url 주소(마지막 /로 부터 -18자리 - 자신의 환경에 맞게 조절해야 함)
 	String url = request.getRequestURL().substring(0, request.getRequestURL().lastIndexOf("/")-18) + folderName + "/";
 

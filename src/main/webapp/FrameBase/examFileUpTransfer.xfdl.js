@@ -122,6 +122,8 @@
         			this.Dataset00.setColumn(nRowIdx, 0, obj.filename);
         			this.Dataset00.setColumn(nRowIdx, 1, this.cutFileSize(e.filesize));
         			this.FileUpTransfer00.addFile(obj.filename, obj);
+        			console.log("FileList_onsuccess obj.filename : " + obj.filename);
+        			console.log("FileList_onsuccess obj.filesize : " + this.cutFileSize(e.filesize));
         			break;
         	}
         }
