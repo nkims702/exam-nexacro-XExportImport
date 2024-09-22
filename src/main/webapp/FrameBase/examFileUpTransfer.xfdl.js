@@ -62,6 +62,11 @@
             obj = new TextArea("TextArea00","20","240","482","120",null,null,null,null,null,null,this);
             obj.set_taborder("4");
             this.addChild(obj.name, obj);
+
+            obj = new Static("Static01","539","43","273","80",null,null,null,null,null,null,this);
+            obj.set_taborder("5");
+            obj.set_text("src 위치 변경");
+            this.addChild(obj.name, obj);
             // Layout Functions
             //-- Default Layout : this
             obj = new Layout("default","",1024,768,this,function(p){});

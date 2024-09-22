@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="Form_Top" width="1280" height="50" titletext="Form_Top">
+    <Layouts>
+      <Layout width="1280" height="50" screenid="Desktop_screen">
+        <Static id="Static00" taborder="0" text="nexacro Excel Import, Excport 01" left="32" top="8" width="1044" height="36"/>
+      </Layout>
+    </Layouts>
+  </Form>
+</FDL>

@@ -15,34 +15,33 @@
 
 	
 	<!-- FRAMEWORK_LIBRARY : framework lodaing path (list of scripts files in the Framework.json file) -->
-    <script src="./nexacrolib/framework/Framework.js" defer></script>
+    <script src="./nexacrolib/framework/Framework.js"></script>
 	
 	<!-- COMPONENTS_LIBRARY : commonent lodaing path (list of script file in json file specified in the TypeDefinition module) -->
-    <script src="./nexacrolib/component/CompBase.js" defer></script>
-    <script src="./nexacrolib/component/ComComp.js" defer></script>
-    <script src="./nexacrolib/component/Grid.js" defer></script>
-    <script src="./nexacrolib/component/ListView.js" defer></script>
-    <script src="./nexacrolib/component/DeviceAPI.js" defer></script>
-    <script src="./nexacrolib/component/MobileComp.js" defer></script>
+    <script src="./nexacrolib/component/CompBase.js"></script>
+    <script src="./nexacrolib/component/ComComp.js"></script>
+    <script src="./nexacrolib/component/Grid.js"></script>
+    <script src="./nexacrolib/component/ListView.js"></script>
+    <script src="./nexacrolib/component/DeviceAPI.js"></script>
+    <script src="./nexacrolib/component/MobileComp.js"></script>
 	
 	<!-- ENVIRONMENT_LIBRARY : application environment path (path of Environment.xml.js) -->
-    <script src="./environment.xml.js" defer></script>
+    <script src="./environment.xml.js"></script>
   
   <!-- SPLASH_DEFINE_STYLE : Defines the style of the splash screen that is visible while modules are loading -->
-  <style>.loader { position: absolute; left: 50%; top: 50%; z-index: 1; width: 150px; height: 150px; margin: -75px 0 0 -75px; border: 16px solid #f3f3f3; border-radius: 50%; border-top: 16px solid #3498db; -webkit-animation: spin 2s linear infinite; animation: spin 2s linear infinite; } @-webkit-keyframes spin { 0% { -webkit-transform: rotate(0deg); } 100% { -webkit-transform: rotate(360deg); } } @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }</style>
+
 	
 	<title></title>
 </head>
 <body style="margin:0;border:none;-ms-touch-action:none;" onload="oninitframework()">
 	<!-- SPLASH_SHOW_STYLE : Adds the splash screen that is visible while modules are loading -->
-    <div class="loader" id="loader"/>
+
   
 	<script>
 	function oninitframework()
 	{
 		/* SPLASH_HIDE_STYLE : Hides the splash screen when modules finish loading */
-        var loader = document.getElementById("loader");
-        if (loader) loader.style.display="none";
+
     
 		/* parameter information */
 		var urlParams = {};
