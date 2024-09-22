@@ -23,7 +23,7 @@ if (nexacro.Environment)
         nexacro._addService("extlib", "file", "./_extlib_/", "session", null, "", "0", "");
         nexacro._addService("Base", "form", "./Base/", "session", null, "", "0", "0");
         nexacro._addService("FrameBase", "form", "./FrameBase/", "session", null, "", "0", "0");
-        nexacro._addService("svc", "JSP", "http://localhost:8081/", "session", null, "", "0", "0");
+        nexacro._addService("svc", "JSP", "http://localhost:8081/nexacro-web", "session", null, "", "0", "0");
         nexacro._addService("nexacrolib", "js", "./nexacrolib/", "session", null, "", "0", "0");
     	nexacro._component_uri = (nexacro._arg_compurl ? nexacro._arg_compurl : "./nexacrolib/component/");
     	nexacro._theme_uri = "./_resource_/_theme_/";
@@ -62,7 +62,15 @@ if (nexacro.Environment)
         		{"id":"DateRangePicker", "classname":"nexacro.DateRangePicker", "type":"JavaScript"},
         		{"id":"PopupDateRangePicker", "classname":"nexacro.PopupDateRangePicker", "type":"JavaScript"},
         		{"id":"ExcelExportObject", "classname":"nexacro.ExcelExportObject", "type":"JavaScript"},
-        		{"id":"ExcelImportObject", "classname":"nexacro.ExcelImportObject", "type":"JavaScript"}
+        		{"id":"ExcelImportObject", "classname":"nexacro.ExcelImportObject", "type":"JavaScript"},
+        		{"id":"FileUpTransfer", "classname":"nexacro.FileUpTransfer", "type":"JavaScript"},
+        		{"id":"FileDownTransfer", "classname":"nexacro.FileDownTransfer", "type":"JavaScript"},
+        		{"id":"Sketch", "classname":"nexacro.Sketch", "type":"JavaScript"},
+        		{"id":"WebBrowser", "classname":"nexacro.WebBrowser", "type":"JavaScript"},
+        		{"id":"WebView", "classname":"nexacro.WebView", "type":"JavaScript"},
+        		{"id":"FileDialog", "classname":"nexacro.FileDialog", "type":"JavaScript"},
+        		{"id":"FileDownload", "classname":"nexacro.FileDownload", "type":"JavaScript"},
+        		{"id":"FileUpload", "classname":"nexacro.FileUpload", "type":"JavaScript"}
         ];
     	nexacro._addClasses(registerclass);
     };

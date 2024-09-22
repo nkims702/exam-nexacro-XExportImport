@@ -65,6 +65,7 @@ public class NexacroConfig extends WebAppConfig implements WebMvcRegistrations{
 		//super.addReturnValueHandlers(handlers);
 	}
 	
+	/*
 	@Override
 	public void configureHandlerExceptionResolvers(List<HandlerExceptionResolver> resolvers) {
 		NexacroView nexacroView = new NexacroView();
@@ -85,7 +86,7 @@ public class NexacroConfig extends WebAppConfig implements WebMvcRegistrations{
 		
 		//	super.configureHandlerExceptionResolvers(resolvers);
 	}
-	
+	*/
 	@Bean
 	  public ServletRegistrationBean<GridExportImportServlet> gridExportImportServletBean() {
 	      ServletRegistrationBean<GridExportImportServlet> bean = 

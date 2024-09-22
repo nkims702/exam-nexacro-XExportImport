@@ -28,13 +28,33 @@
             obj._setContents("<Formats><Format id=\"default\"><Columns><Column size=\"80\"/><Column size=\"80\"/></Columns><Rows><Row band=\"head\" size=\"24\"/><Row size=\"24\"/></Rows><Band id=\"head\"><Cell text=\"ID\"/><Cell col=\"1\" text=\"NAME\"/></Band><Band id=\"body\"><Cell text=\"bind:ID\"/><Cell col=\"1\" text=\"bind:NAME\"/></Band></Format></Formats>");
             this.addChild(obj.name, obj);
 
-            obj = new Button("Button00","64.00","44","626","36",null,null,null,null,null,null,this);
+            obj = new Button("Button00","64.00","44","226","36",null,null,null,null,null,null,this);
             obj.set_taborder("1");
             obj.set_text("Button port 8181 exam-nexacro-XExportImport");
             this.addChild(obj.name, obj);
 
             obj = new TextArea("txtLog","64","220","491","168",null,null,null,null,null,null,this);
             obj.set_taborder("2");
+            this.addChild(obj.name, obj);
+
+            obj = new Button("Button01","311","45","155","36",null,null,null,null,null,null,this);
+            obj.set_taborder("3");
+            obj.set_text("testfile");
+            this.addChild(obj.name, obj);
+
+            obj = new Button("Button02","489","47","199","33",null,null,null,null,null,null,this);
+            obj.set_taborder("4");
+            obj.set_text("filetransuupdown");
+            this.addChild(obj.name, obj);
+
+            obj = new Button("Button03","598","235","208","81",null,null,null,null,null,null,this);
+            obj.set_taborder("5");
+            obj.set_text("E:\\ExtFileUpDownload");
+            this.addChild(obj.name, obj);
+
+            obj = new Button("Button04","64","7","627","30",null,null,null,null,null,null,this);
+            obj.set_taborder("6");
+            obj.set_text("Button04");
             this.addChild(obj.name, obj);
             // Layout Functions
             //-- Default Layout : this
@@ -185,12 +205,30 @@
         };
 
 
+        this.Button01_onclick = function(obj,e)
+        {
+        	this.go("FrameBase::examFileUpTransfer.xfdl");
+        };
+
+        this.Button02_onclick = function(obj,e)
+        {
+        	this.go("FrameBase::filetransupdown.xfdl");
+        };
+
+        this.Button04_onclick = function(obj,e)
+        {
+        	console.log("---------");
+        };
+
         });
         
         // Regist UI Components Event
         this.on_initEvent = function()
         {
             this.Button00.addEventHandler("onclick",this.Button00_onclick,this);
+            this.Button01.addEventHandler("onclick",this.Button01_onclick,this);
+            this.Button02.addEventHandler("onclick",this.Button02_onclick,this);
+            this.Button04.addEventHandler("onclick",this.Button04_onclick,this);
         };
         this.loadIncludeScript("Form_Work.xfdl");
         this.loadPreloadList();
