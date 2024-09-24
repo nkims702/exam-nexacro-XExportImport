@@ -307,12 +307,14 @@
 	</dependencies>
 
 	<build>
-		<finalName>nexacro-web</finalName>
+		<finalName>ROOT</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId> 
-				  
+				<configuration>
+					<outputDirectory>C:\dev\Tomcat 9.0\webapps</outputDirectory>
+				</configuration>  
 			</plugin>
 		</plugins>
 	</build>
