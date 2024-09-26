@@ -253,20 +253,50 @@
 			<scope>system</scope>
 			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/nexacro-xapi-java-1.0.12.jar</systemPath>
 		</dependency> 
+		
+		<dependency>
+			<groupId>com.nexacron</groupId>
+			<artifactId>nexacro-xeni</artifactId>
+			<version>1.4.13</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/nexacro-xeni-java-1.4.13.jar</systemPath>
+		</dependency>
 			
+		<dependency>
+			<groupId>com.nexacron</groupId>
+			<artifactId>uiadapter-spring-core</artifactId>
+			<version>1.0.0</version> 
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/uiadapter-spring-core-1.0.0-SNAPSHOT.jar</systemPath>
+		</dependency>
+		  
+		<dependency>
+			<groupId>com.nexacron</groupId>
+			<artifactId>uiadapter-spring-dataaccess</artifactId>
+			<version>1.0.0</version> 
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/uiadapter-spring-dataaccess-1.0.0-SNAPSHOT.jar</systemPath>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.nexacron</groupId>
+			<artifactId>uiadapter-spring-excel</artifactId>
+			<version>1.0.0</version> 
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/uiadapter-spring-excel-1.0.0-SNAPSHOT.jar</systemPath>
+		</dependency>
 		<!-- local build -->	
 		<!-- <dependency> 
 			<groupId>com.nexacron</groupId>
 			<artifactId>nexacro-xapi</artifactId>
 			<version>1.0.13</version>
-		</dependency>  --> 
+		</dependency>  
 		
 		<dependency>
 			<groupId>com.nexacron</groupId>
 			<artifactId>nexacro-xeni</artifactId>
 			<version>1.4.13</version>
 		</dependency>
-		
 		
 		<dependency>
 			<groupId>com.nexacron</groupId>
@@ -286,6 +316,7 @@
 			<version>1.0.0</version> 
 		</dependency>
 		
+		--> 
 		<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-config -->
 		<!-- <dependency>
 		    <groupId>org.springframework.security</groupId>
