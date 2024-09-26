@@ -238,35 +238,35 @@
 		</dependency>
 		
 		<!-- nexacroN jar 추가  --> 
-		<!-- <dependency>
-			<groupId>com.nexacron</groupId>
-			<artifactId>nexacro-xapi</artifactId>
-			<version>1.0.0</version>
+		 
+		<!-- <scope>system</scope>
+			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/nexacro-xapi-java-1.0.12.jar</systemPath> -->
+		<!-- 
 			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/nexacroN-xapi-1.0.0-SNAPSHOT.jar</systemPath>
-		</dependency>  
-		<dependency>
-			<groupId>com.nexacron</groupId>
-			<artifactId>nexacro-xeni</artifactId>
-			<version>1.0.0</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/nexacroN-xeni-1.0.0-SNAPSHOT.jar</systemPath>
-		</dependency> --> 
+			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/nexacro-xeni-java-1.4.13.jar</systemPath> -->	
+			
+		<!-- jenkins build -->	
 		<dependency> 
 			<groupId>com.nexacron</groupId>
 			<artifactId>nexacro-xapi</artifactId>
 			<version>1.0.13</version>
-		</dependency>  
-		<!-- <scope>system</scope>
-			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/nexacro-xapi-java-1.0.12.jar</systemPath> -->
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/nexacro-xapi-java-1.0.12.jar</systemPath>
+		</dependency> 
+			
+		<!-- local build -->	
+		<!-- <dependency> 
+			<groupId>com.nexacron</groupId>
+			<artifactId>nexacro-xapi</artifactId>
+			<version>1.0.13</version>
+		</dependency>  --> 
+		
 		<dependency>
 			<groupId>com.nexacron</groupId>
 			<artifactId>nexacro-xeni</artifactId>
 			<version>1.4.13</version>
 		</dependency>
-		<!-- 
-			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/nexacro-xeni-java-1.4.13.jar</systemPath> -->
+		
 		
 		<dependency>
 			<groupId>com.nexacron</groupId>
